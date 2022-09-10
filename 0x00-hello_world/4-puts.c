@@ -1,8 +1,9 @@
 #include <stdio.h>
 /**
  * main - Serves as the entry point for the program
- *
- * Return : bu default returns zero if there are no errors. Otherwise, returns non - zero value.
+ * Description : using the main function
+ * This program prints "Programmig is like building a multilingual puzzle
+ * Return : 0
  */
 int main(void)
 {
