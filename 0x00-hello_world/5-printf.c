@@ -1,12 +1,7 @@
 #include<stdio.h>
-
-
-
 /**
 
  * main - prints the string in the printf funtion
-
- *
 
  * Description: using the min function
 
