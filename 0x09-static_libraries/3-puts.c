@@ -1,28 +1,16 @@
 #include "main.h"
 /**
- * _puts - print a given string to screen
- * @str: passed pointer argument for string
- * Return: void
+ *_puts - prints a string
+ * @str: string to print
+ *
+ * Description: prints a string
+ * On success: return the number of characters printed
  */
 
 void _puts(char *str)
-
 {
+while (*str)
+_putchar(*str++);
 
-	int len = 0;
-
-
-
-	while (*(str + len) != '\0')
-
-	{
-
-		_putchar(*(str + len));
-
-		len++;
-
-	}
-
-	_putchar('\n');
-
+_putchar('\n');
 }
