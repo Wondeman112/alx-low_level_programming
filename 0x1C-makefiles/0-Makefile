@@ -1,0 +1,17 @@
+CC = gcc
+CFLAGS = -Wall -Wextra -pedantic -std=c99
+SRC = main.c file1.c file2.c  # Add your source files here
+OBJ = $(SRC:.c=.o)
+EXECUTABLE = school
+
+all: $(EXECUTABLE)
+
+$(EXECUTABLE): $(OBJ)
+	$(CC) $(CFLAGS) $(OBJ) -o $@
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+clean:
+	rm -f $(OBJ) $(EXECUTABLE)
+
